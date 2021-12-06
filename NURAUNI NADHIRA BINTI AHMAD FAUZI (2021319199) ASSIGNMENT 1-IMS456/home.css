@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Navbar Header*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: 'Lucida Sans';
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 25px;
+    transition: all .25s ease;
+}
+.navbar ul li a:hover{
+    background-color: #CD995D;
+    color: white;
+    box-shadow: 0 0 10px white;
+}
+/*End Navbar Header*/
+
+/*Homepage Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    color: #a85b03;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('picture/homebg.png') no-repeat center center/cover;
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid #CD995D;*/
+    align-items:flex-end;
+    position: absolute;
+    top: 70%;
+    right: 47%;
+}
+.headings{
+    font-family: 'Lucida Sans';
+    font-weight: lighter;
+    margin: 10px 0px;
+    color: rgba(73, 58, 58, 0.493);
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: black;
+    outline: none;
+    transition: .25s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #CD995D;
+    color: white;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+.btn a:hover{
+    color: white;
+}
+    
+
+/*End Homepage Section*/
+
+/*Footer Section*/
+.inner-footer{
+    margin: 0;
+    padding: 35px;
+    background-color: #CD995D;
+}
+.quick-links{
+    display: flex;
+}
+.quick-links ul{
+    display: flex;
+    width: 300px;
+    height: 10px;
+    margin: auto;
+}
+.secure-links{
+    list-style: none;
+}
+.secure-links a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 20px ;
+    color: black;
+    transition: all .25s ease;
+}
+.secure-links a:hover{
+    color: white;
+}
+
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: rgb(121, 100, 70);
+    font-size: 15px;
+    background-color: #CD995D;
+}
+/*End Footer Section*/

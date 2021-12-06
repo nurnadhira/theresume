@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Navbar Header*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: 'Lucida Sans';
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 25px;
+    transition: all .25s ease;
+}
+.navbar ul li a:hover{
+    background-color: #CD995D;
+    color: white;
+    box-shadow: 0 0 10px white;
+}
+/*End Navbar Header*/
+
+/*Contact Section*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('picture/contactme.png') no-repeat center center/cover;
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 150%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 150%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 50%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px #CD995D;
+}
+/*End Contact Section*/
+
+
+/*Footer Section*/
+.inner-footer{
+    margin: 0;
+    padding: 35px;
+    background-color: #CD995D;
+}
+.quick-links{
+    display: flex;
+}
+.quick-links ul{
+    display: flex;
+    width: 300px;
+    height: 10px;
+    margin: auto;
+}
+.secure-links{
+    list-style: none;
+}
+.secure-links a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 20px ;
+    color: black;
+    transition: all .25s ease;
+}
+.secure-links a:hover{
+    color: white;
+}
+
+
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: rgb(121, 100, 70);
+    font-size: 15px;
+    background-color: #CD995D;
+}
+
+
+
+/*End Footer Section*/

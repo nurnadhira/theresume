@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+:root{
+    --blue: #2980b9;
+    --black: #333;
+    --white:#fff;
+    --light-color: #777;
+    --light-bg:#eee;
+    --box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+/*Navbar Header*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: 'Lucida Sans';
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 25px;
+    transition: all .5 ease;
+}
+.navbar ul li a:hover{
+    background-color: #CD995D;
+    color: white;
+    box-shadow: 0 0 10px white;
+}
+/*End Navbar Header*/
+
+
+/*About Me Section*/
+
+html::-webkit-scrollbar{
+    width: 10px;
+}
+html::-webkit-scrollbar track{
+    width: var(--black);
+}
+html::-webkit-scrollbar-thumb{
+    width: var(--white);
+    border-radius: 50px;
+}
+.title{
+    font-size: 25px;
+    color:rgb(177, 61, 19);
+    margin-bottom: 15px;
+}
+.btn{
+    margin-top: 10px;
+    display: inline-block;
+    padding:7px 20px;
+    border-radius: 5px;
+    background: rgb(177, 61, 19);
+    color:var(--white);
+    font-size: 17px;
+    box-shadow: var(--box-shadow);
+}
+.btn:hover{
+    background: var(--black);
+}
+.container{
+    padding: 100px 9%;
+    background: linear-gradient(45deg, rgb(224, 151, 116), var(--light-color));
+    display: flex;
+}
+.container .profile{
+    flex: 1 1 400px;
+    background: var(--light-bg);
+    padding: 30px 20px;
+    text-align: center;
+    position: sticky;
+    top: 20px; left: 0;
+    border-right: 2px solid var(--black);
+    align-self: flex-start;
+}
+.container .profile img{
+    height: 150px;
+    width: 150px;
+    border-radius: 30%;
+    border: 2px solid var(--black);
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.container .profile h3{
+    color: var(--black);
+    font-size: 20px;
+}
+.container .profile p{
+    color: var(--black);
+    padding: 5px 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.container .profile .share{
+    margin: 10px 0;
+}
+.container .profile .share a{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: var(--black);
+    background: var(--light-bg);
+}
+.container .profile .share a:hover{
+    background: rgb(177, 61, 19);
+    color:var(--white);
+    box-shadow: var(--box-shadow);
+}
+.container .information{
+    flex: 1 1 2000px;
+    background: var(--light-bg);
+    padding:20px 30px;
+}
+.container .information .about p{
+    font-size: 17px;
+    line-height: 2;
+    padding-bottom: 10px;
+    color:var(--light-color);
+}
+.container .information .about .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+.container .information .about .box-container .box{
+    flex:1 1 250px;
+}
+.container .information .about .box-container .box h3{
+    font-size: 15px;
+    padding:15px 0;
+    color:var(--black);
+}
+.container .information .about .box-container .box h3 span{
+    color:var(--light-color);
+}
+.container .information .langlevel .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+.container .information .langlevel .box-container .box{
+    flex:1 1 300px;
+}
+.container .information .langlevel .box-container .box .progress h3{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    color:var(--black);
+    font-size: 15px;
+}
+.container .information .langlevel .box-container .box .progress h3 span{
+    color:var(--light-color);
+}
+.container .information .langlevel .box-container .box .progress .bar{
+    overflow: hidden;
+    border-radius: 50px;
+    height: 10px;
+    background: var(--light-bg);
+}
+.container .information .langlevel .box-container .box .progress .bar span{
+    background: rgb(156, 97, 7);
+    height: 100%;
+    display: block;
+    border-radius: 50px;
+}
+.container .information .langlevel .box-container .box:first-child .progress:nth-child(1) .bar span{
+    width: 100%;
+}
+.container .information .langlevel .box-container .box:first-child .progress:nth-child(2) .bar span{
+    width: 80%;
+}
+.container .information .langlevel .box-container .box:first-child .progress:nth-child(3) .bar span{
+    width: 55%;
+}
+.container .information .langlevel .box-container .box:first-child .progress:nth-child(4) .bar span{
+    width: 30%;
+}
+.container .information .langlevel .box-container .box:first-child .progress:nth-child(5) .bar span{
+    width: 35%;
+}
+
+.container .information .qualific{
+    margin:20px 0;
+}
+
+.container .information .qualific .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+  
+.container .information .qualific .box-container .box{
+    padding:20px;
+    border-radius: 5px;
+    flex:1 1 350px;
+    background: var(--light-bg);
+}
+  
+.container .information .qualific .box-container .box span{
+    color:rgb(148, 69, 38);
+    font-size: 15px;
+}
+  
+.container .information .qualific .box-container .box h3{
+    color:var(--black);
+    font-size: 17px;
+    padding:5px 0;
+}
+  
+.container .information .qualific .box-container .box p{
+    color:var(--light-color);
+    line-height: 2;
+    font-size: 13px;
+}
+.container .information .contact .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+  
+.container .information .contact .box-container .box{
+    flex: 1 1 200px;
+    display: flex;
+    align-self: flex-start;
+    gap:10px;
+}
+  
+.container .information .contact .box-container .box i{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    border-radius: 50%;
+    background: rgb(170, 91, 38);
+    color:var(--white);
+    text-align: center;
+}
+  
+.container .information .contact .box-container .box h3{
+    font-size: 17px;
+    color:var(--black);
+    padding-bottom: 5px;
+}
+  
+.container .information .contact .box-container .box p{
+    font-size: 14px;
+    color:var(--light-color);
+    line-height: 2;
+}
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+  
+    .container{
+      flex-flow: column;
+      padding:20px;
+      justify-content: center;
+    }
+  
+    .container .profile{
+      position: static;
+      border-radius: 5px;
+      box-shadow: var(--box-shadow);
+      padding:20px;
+      border-right: none;
+      margin:0 auto;
+      margin-bottom: 15px;
+    }
+  
+    .container .information{
+      border-radius: 5px;
+      box-shadow: var(--box-shadow);
+      padding:20px;
+    }
+  
+  }
+  
+  @media (max-width:450px){
+  
+    .container .profile{
+      width: 100%;
+    }
+  
+    .container .profile .btn{
+      width: 100%;
+    }
+  
+    .container .information .about p{
+      font-size: 12px;
+    }
+  
+    .container .information .experience .box-container .box p{
+      font-size: 12px;
+    }
+  
+  }
+
+
+
+/*End About Me Section*/
+
+/*Footer Section*/
+.inner-footer{
+    margin: 0;
+    padding: 35px;
+    background-color: #CD995D;
+}
+.quick-links{
+    display: flex;
+}
+.quick-links ul{
+    display: flex;
+    width: 300px;
+    height: 10px;
+    margin: auto;
+}
+.secure-links{
+    list-style: none;
+}
+.secure-links a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 20px ;
+    color: black;
+    transition: all .25s ease;
+}
+.secure-links a:hover{
+    color: white;
+}
+
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: rgb(121, 100, 70);
+    font-size: 15px;
+    background-color: #CD995D;
+}
+/*End Footer Section*/

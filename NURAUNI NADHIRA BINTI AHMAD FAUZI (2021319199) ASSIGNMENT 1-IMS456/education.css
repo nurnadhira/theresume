@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Navbar Header*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: 'Lucida Sans';
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 25px;
+    transition: all .25s ease;
+}
+.navbar ul li a:hover{
+    background-color: #CD995D;
+    color: white;
+    box-shadow: 0 0 10px white;
+}
+/*End Navbar Header*/
+
+
+/*Education Section*/
+#educationbg{
+    display: flex;
+    flex-direction: column;
+}
+#educationbg::before{
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    background: url('picture/edubg.png') no-repeat center center/cover;
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+}
+#educationbg h1{
+    margin: 60px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    background-color: rgb(255, 245, 226);
+    color: rgb(155, 63, 63);
+    border-radius: 30px;
+
+}
+.columns{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 110px;
+}
+.box{
+    height: 200px;
+    width: 500px;
+    background-color:rgb(255, 245, 226);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px;
+}
+.box h2{
+    color: rgb(155, 63, 63);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.box p{
+    color: black ;
+    font-size: 1rem;
+}
+
+/*End Education Section*/
+
+/*Footer Section*/
+.inner-footer{
+    margin: 0;
+    padding: 25px;
+}
+.quick-links{
+    display: flex;
+}
+.quick-links ul{
+    display: flex;
+    width: 300px;
+    height: 10px;
+    margin: auto;
+}
+.secure-links{
+    list-style: none;
+}
+.secure-links a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 20px ;
+    color: black;
+    transition: all .25s ease;
+}
+.secure-links a:hover{
+    color: white;
+}
+
+
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: rgb(121, 100, 70);
+    font-size: 15px;
+    background-color: rgb(255, 245, 226);
+}
+
+
+
+/*End Footer Section*/
